@@ -1,0 +1,32 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --pink: #E12AFB;
+    --green: #008000;
+}
+
+
+
+
+.shopping-cart {
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
